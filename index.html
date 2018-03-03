@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>frdm</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css">
+  <link rel="stylesheet" href="global.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <nav>
+    <div class="logo"></div>
+    <ul class="menu">
+      <div class="menu__item toggle">
+        <span></span>
+      </div>
+      <li class="menu__item">
+        <a href="https://docs.frdm.io" class="link link--dark">
+          <i class="fa fa-book"></i> Documentation</a>
+      </li>
+      <li class="menu__item">
+        <a href="https://github.com/andrew-waters/frdm" class="link link--dark">
+          <i class="fa fa-github"></i> Github</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="hero">
+    <h1 class="hero__title">frdm</h1>
+    <p class="hero__description">An open source Content Management API</p>
+  </div>
+  <div class="hero__terminal">
+    <pre>
+        <code class="shell-session demo">aw ~ $ </code>
+      </pre>
+  </div>
+  <div class="wrapper">
+    <!-- <div class="installation">
+        <h3 class="section__title">Installation</h3>
+        <div class="tab__container">
+          <ul>
+            <li class="tab active" data-tab="mac">mac</li>
+            <li class="tab" data-tab="linux">linux</li>
+            <li class="tab" data-tab="win">win</li>
+          </ul>
+          <pre class="nohighlight code">
+            <code class="tab__pane active mac">$  brew install scribbler</code>
+            <code class="tab__pane linux">$  apt-get install scribbler</code>
+            <code class="tab__pane win">$  gem install scribbler</code>
+          </pre>
+        </div>
+      </div> -->
+    <div class="feature">
+      <div class="feature__item">
+        <h3 class="section__title">Fast</h3>
+        <p>Written in
+          <a href="https://golang.org/">Go</a>, with internal communicatin over gRPC, frdm is a performant collection of microservices.</p>
+      </div>
+      <div class="feature__item">
+        <h3 class="section__title">Well Tested</h3>
+        <p>Each microservice contains extensive test suites and the API has it's own acceptance tests.</p>
+      </div>
+      <div class="feature__item">
+        <h3 class="section__title">Open Source</h3>
+        <p>Simply grab the code and deploy it. It's a doddle. See a microservice you want to use for another project. Just grab
+          it!</p>
+      </div>
+      <div class="feature__item">
+        <h3 class="section__title">Configuration</h3>
+        <p>Maintain all your settings in a single
+          <span class="code code--inline">ENV</span> file. Deploy to multiple environments with multiple
+          <span class="code code--inline">ENV</span> files.</p>
+      </div>
+      <div class="feature__item">
+        <h3 class="section__title">Extendable</h3>
+        <p>Want a new service to do something new? Write it, deploy it and add it to the gateway and you're away.</p>
+      </div>
+      <div class="feature__item">
+        <h3 class="section__title">Heterogenous</h3>
+        <p>Data is sent by default as JSON, making it a breeze to consume the API via any language.</p>
+      </div>
+    </div>
+    <div class="keybinding">
+      <ul class="keybinding__detail">
+        <h3 class="keybinding__title">Services</h3>
+        <li>Pages</li>
+        <li>Locale (countries, languages, continents)</li>
+      </ul>
+      <ul class="keybinding__detail">
+        <h3 class="keybinding__title">Endpoints</h3>
+        <li>/pages</li>
+        <li>/locale</li>
+      </ul>
+    </div>
+    <div class="callout">
+      <!-- <p>Read our documentation for advanced keybindings and customization</p> -->
+      <a href="https://docs.frdm.io" class="button--primary">Documentation</a>
+    </div>
+  </div>
+  <!-- <div class="changelog">
+      <div class="wrapper">
+        <h3 class="section__title">Changelog</h3>
+        <div class="changelog__item">
+          <div class="changelog__meta">
+            <h4 class="changelog__title">v0.0.1</h4>
+            <small class="changelog__date">5/10/2017</small>
+          </div>
+          <div class="changelog__detail">
+            <ul>
+              <li>Save default md file in new folders</li>
+              <li>Ability to quick search on existing notes</li>
+            </ul>
+          </div>
+        </div>
+        <div class="changelog__callout">
+          <a href="#" class="button--secondary">Checkout Full Log</a>
+        </div>
+      </div>
+    </div> -->
+  <footer class="footer">frdm is an open source content management system maintained by
+    <a href="http://www.iknow.me/" target="_blank" class="link link--light">Andrew Waters</a>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script src="global.js"></script>
+</body>
+
+</html>
