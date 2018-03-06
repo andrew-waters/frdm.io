@@ -12,13 +12,8 @@ var getAll = function (selector, scope) {
 // setup typewriter effect in the terminal demo
 if (document.getElementsByClassName('demo').length > 0) {
   var i = 0;
-  var txt = `frdm
-            Welcome to the frdm CLI
-            Choose a domain to start exploring:
-
-            1. www.google.com
-            2. www.facebook.com
-            
+  var txt = `frdm deploy --env=local --platform=kubernetes
+            Deploying frdm to kubernetes (local)...
             |`;
   var speed = 60;
 
